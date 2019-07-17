@@ -15,7 +15,7 @@ spring:
       ddl_auto: update
   jpa:
     database: MYSQL
-    show_sql: false
+    show_sql: true
     hibernate:
       ddl_auto: update
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
