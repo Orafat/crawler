@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/crawer?characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    maxIdleTime: 1800
+    validationQuery: select 1
+    testOnBorrow: true
+    max-idle: 5
+    min-idle: 5
+    test-while-idle: true
+    hibernate:
+      show_sql: true
+      ddl_auto: update
+  jpa:
+    database: MYSQL
+    show_sql: false
+    hibernate:
+      ddl_auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
